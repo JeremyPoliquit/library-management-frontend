@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Avatar, AvatarImage } from "./ui/avatar";
 import { Archive, Bookmark, ChevronRight, Trash2 } from "lucide-react";
 import { mobileItems, sidebarItems } from "@/data/profile-list";
-import SidebarCard from "./sidebar-card";
+import SidebarCard from "./SidebarCard";
 
 function SidebarProfile() {
   return (

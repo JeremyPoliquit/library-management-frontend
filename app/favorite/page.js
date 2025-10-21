@@ -1,5 +1,5 @@
-import SidebarLeft from "@/components/sidebar-profile";
-import SidebarRight from "@/components/sidebar-card";
+import SidebarLeft from "@/components/SidebarProfile";
+import SidebarRight from "@/components/SidebarCard";
 import React from "react";
 
 function page() {

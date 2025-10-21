@@ -1,5 +1,6 @@
-import SidebarCard from "@/components/sidebar-card";
-import SidebarProfile from "@/components/sidebar-profile";
+import SearchFIlter from "@/components/SearchFIlter";
+import SidebarCard from "@/components/SidebarCard";
+import SidebarProfile from "@/components/SidebarProfile";
 import React from "react";
 
 function page() {
@@ -8,8 +9,7 @@ function page() {
       <SidebarProfile />
 
       <section className="bg-white p-4 rounded-lg shadow">
-        <h2 className="text-lg font-semibold mb-2">Main Content</h2>
-        <p>This is your main content section.</p>
+        <SearchFIlter />
       </section>
 
       <SidebarCard mode="Currently Reading" title="The Brain Change Itself" />
