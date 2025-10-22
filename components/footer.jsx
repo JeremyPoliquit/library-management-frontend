@@ -1,3 +1,4 @@
+import { discovery, help, openLibrary } from "@/data/footer-list";
 import { Book } from "lucide-react";
 import Link from "next/link";
 
@@ -23,37 +24,31 @@ export default function Footer() {
       {/* Open Library */}
       <div className="flex flex-col gap-4">
         <h3 className="font-semibold">Open Library</h3>
-        <ul className="flex flex-col gap-2 list-inside">
-          <Link href=""><li>Vision</li></Link>
-          <Link href=""><li>Volunteer</li></Link>
-          <Link href=""><li>Blog</li></Link>
-          <Link href=""><li>Terms of Service</li></Link>
-          <Link href=""><li>Donate</li></Link>
-        </ul>
+        {openLibrary.map(({ id, name, href }) => (
+          <ul key={id} className="flex flex-col gap-2 list-inside">
+            <Link href={href}>{name}</Link>
+          </ul>
+        ))}
       </div>
 
       {/* Discover */}
       <div className="flex flex-col gap-4">
         <h3 className="font-semibold">Discover</h3>
-        <ul className="flex flex-col gap-2 list-inside">
-          <Link href=""><li>Home</li></Link>
-          <Link href=""><li>Books</li></Link>
-          <Link href=""><li>Authors</li></Link>
-          <Link href=""><li>Subjects</li></Link>
-          <Link href=""><li>Collections</li></Link>
-        </ul>
+        {discovery.map(({ id, name, href }) => (
+          <ul key={id} className="flex flex-col gap-2 list-inside">
+            <Link href={href}>{name}</Link>
+          </ul>
+        ))}
       </div>
 
       {/* Help */}
       <div className="flex flex-col gap-4">
         <h3 className="font-semibold">Help</h3>
-        <ul className="flex flex-col gap-2 list-inside">
-          <Link href=""><li>Collections</li></Link>
-          <Link href=""><li>Contact Us</li></Link>
-          <Link href=""><li>Suggesting Edits</li></Link>
-          <Link href=""><li>Add a Book</li></Link>
-          <Link href=""><li>Release Notes</li></Link>
-        </ul>
+        {help.map(({ id, name, href }) => (
+          <ul key={id} className="flex flex-col gap-2 list-inside">
+            <Link href={href}>{name}</Link>
+          </ul>
+        ))}
       </div>
     </footer>
   );

@@ -5,13 +5,13 @@ export const sidebarItems = [
     id: 1,
     name: "Home",
     icon: Home,
-    href: "",
+    href: "/home",
   },
   {
     id: 2,
     name: "Bookmark",
     icon: Bookmark,
-    href: "",
+    href: "/favorite",
   },
   {
     id: 3,

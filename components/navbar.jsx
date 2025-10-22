@@ -38,7 +38,7 @@ export default function Navbar() {
           </ul>
         </div>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8">
           <div className="flex items-center gap-2">
             <Link href="">
               <SignalMedium strokeWidth={3} />
@@ -65,7 +65,7 @@ export default function Navbar() {
         {/* Mobile Menu */}
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild>
-            <Menu size={25} className="md:hidden cursor-pointer" />
+            <Menu size={25} className="block lg:hidden cursor-pointer" />
           </SheetTrigger>
 
           <SheetContent
